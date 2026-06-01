@@ -59,3 +59,131 @@ body {
   font-weight: 600;
   color: #2c3e60;
 }
+.year-header {
+  background: #ffffff;
+  border: 1px solid #dde3ec;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin: 2rem auto;
+  max-width: 75%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  text-align: center;
+}
+.year-header h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #2c3e60;
+  margin: 0;
+}
+.project-section {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+}
+.project-card {
+  background: #ffffff;
+  border: 1px solid #dde3ec;
+  border-radius: 10px;
+  padding: 2rem 2.5rem;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.project-card h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+.project-card p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 1.25rem;
+}
+.unity-wrapper {
+  border: 1px solid #dde3ec;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #1a1a2e;
+  position: relative;
+}
+#unity-container {
+  width: 100%;
+  position: relative;
+}
+#unity-canvas {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16/9;
+}
+#unity-loading-bar {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#unity-logo {
+  width: 154px;
+  height: 130px;
+  background: url('anirvinyassuggestionpandabuild/TemplateData/unity-logo-dark.png') no-repeat center;
+  background-size: contain;
+  margin: 0 auto 1rem;
+}
+#unity-progress-bar-empty {
+  width: 200px;
+  height: 18px;
+  background: url('anirvinyassuggestionpandabuild/TemplateData/progress-bar-empty-dark.png') no-repeat center;
+  background-size: cover;
+  margin: 0 auto;
+}
+#unity-progress-bar-full {
+  width: 0%;
+  height: 100%;
+  background: url('anirvinyassuggestionpandabuild/TemplateData/progress-bar-full-dark.png') no-repeat left;
+  background-size: cover;
+}
+#unity-warning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+#unity-footer {
+  background: #1a1a2e;
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#unity-logo-title-footer {
+  width: 80px;
+  height: 30px;
+  background: url('anirvinyassuggestionpandabuild/TemplateData/unity-logo-title-footer.png') no-repeat center;
+  background-size: contain;
+}
+#unity-build-title {
+  color: #e0e0e0;
+  font-size: 0.85rem;
+}
+#unity-fullscreen-button {
+  width: 28px;
+  height: 28px;
+  background: url('anirvinyassuggestionpandabuild/TemplateData/fullscreen-button.png') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+}
+.tag {
+  display: inline-block;
+  background: #eef1fb;
+  color: #3a5bd9;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.75rem;
+}
