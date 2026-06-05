@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: #f0f2f7;
+  color: #1a1a2e;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #16213e;
+  padding: 0 1.5rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-right: auto;
+}
+
+.nav-link {
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.15s;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link.active {
+  color: #7c9ef5;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.status-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2.5rem 3rem;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05), 0 4px 16px rgba(0,0,0,0.04);
+}
+
+.status-card h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e60;
+}
+
+.year-header {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem 2rem;
+  margin: 2rem auto;
+  max-width: 75%;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.year-header h1 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2c3e60;
+  margin: 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #7c9ef5;
+}
+
+.project-section {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05), 0 4px 16px rgba(0,0,0,0.04);
+}
+
+.project-card h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #5a6680;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.unity-wrapper {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #16213e;
+  position: relative;
+}
+
+#unity-container {
+  width: 100%;
+  position: relative;
+}
+
+#unity-canvas {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16/9;
+}
+
+#unity-loading-bar {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#unity-logo {
+  width: 154px;
+  height: 130px;
+  background: url('anirvinyassuggestionpandabuild/TemplateData/unity-logo-dark.png') no-repeat center;
+  background-size: contain;
+  margin: 0 auto 1rem;
+}
+
+#unity-progress-bar-empty {
+  width: 200px;
+  height: 18px;
+  background: url('anirvinyassuggestionpandabuild/TemplateData/progress-bar-empty-dark.png') no-repeat center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+#unity-progress-bar-full {
+  width: 0%;
+  height: 100%;
+  background: url('anirvinyassuggestionpandabuild/TemplateData/progress-bar-full-dark.png') no-repeat left;
+  background-size: cover;
+}
+
+#unity-warning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#unity-footer {
+  background: #16213e;
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+#unity-logo-title-footer {
+  width: 80px;
+  height: 30px;
+  background: url('anirvinyassuggestionpandabuild/TemplateData/unity-logo-title-footer.png') no-repeat center;
+  background-size: contain;
+}
+
+#unity-build-title {
+  color: #a0aec0;
+  font-size: 0.8rem;
+}
+
+#unity-fullscreen-button {
+  width: 28px;
+  height: 28px;
+  background: url('anirvinyassuggestionpandabuild/TemplateData/fullscreen-button.png') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+#unity-fullscreen-button:hover {
+  opacity: 1;
+}
+
+.tag {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4361c2;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.55rem;
+  margin-right: 0.35rem;
+  margin-bottom: 0.75rem;
+}
