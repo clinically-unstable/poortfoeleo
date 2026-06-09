@@ -130,6 +130,7 @@ body {
   position: relative;
 }
 
+/*everything below is used to make the unity embed look good, important is put so it overrides bootstrap*/
 #unity-container {
   width: 100%;
   position: relative;
